@@ -10,7 +10,7 @@
 		18350CE81E882A860054E1C6 /* StoryboardSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18350CE71E882A860054E1C6 /* StoryboardSupport.swift */; };
 		18888DC31E7F0FA80038A3AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18888DC21E7F0FA80038A3AF /* AppDelegate.swift */; };
 		18888DC81E7F0FA80038A3AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18888DC61E7F0FA80038A3AF /* Main.storyboard */; };
-		18888DCB1E7F0FA80038A3AF /* MoonRunner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18888DC91E7F0FA80038A3AF /* MoonRunner.xcdatamodeld */; };
+		18888DCB1E7F0FA80038A3AF /* RetroRunner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18888DC91E7F0FA80038A3AF /* RetroRunner.xcdatamodeld */; };
 		18888DCD1E7F0FA80038A3AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18888DCC1E7F0FA80038A3AF /* Assets.xcassets */; };
 		18888DD01E7F0FA80038A3AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18888DCE1E7F0FA80038A3AF /* LaunchScreen.storyboard */; };
 		18888DD91E7F1D940038A3AF /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18888DD81E7F1D940038A3AF /* CoreDataStack.swift */; };
@@ -91,7 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				18888DD81E7F1D940038A3AF /* CoreDataStack.swift */,
-				18888DC91E7F0FA80038A3AF /* MoonRunner.xcdatamodeld */,
+				18888DC91E7F0FA80038A3AF /* RetroRunner.xcdatamodeld */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -193,7 +193,7 @@
 			files = (
 				18CF26EF1E80291E0097F88C /* NewRunViewController.swift in Sources */,
 				18888DD91E7F1D940038A3AF /* CoreDataStack.swift in Sources */,
-				18888DCB1E7F0FA80038A3AF /* MoonRunner.xcdatamodeld in Sources */,
+				18888DCB1E7F0FA80038A3AF /* RetroRunner.xcdatamodeld in Sources */,
 				18CF26F11E80292C0097F88C /* RunDetailsViewController.swift in Sources */,
 				18888DC31E7F0FA80038A3AF /* AppDelegate.swift in Sources */,
 				18CF26ED1E80290C0097F88C /* HomeViewController.swift in Sources */,
@@ -331,7 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = MoonRunner/Info.plist;
+				INFOPLIST_FILE = RetroRunner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = toolbelt.RetroRunner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -345,7 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = MoonRunner/Info.plist;
+				INFOPLIST_FILE = RetroRunner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = toolbelt.RetroRunner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -378,13 +378,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		18888DC91E7F0FA80038A3AF /* MoonRunner.xcdatamodeld */ = {
+		18888DC91E7F0FA80038A3AF /* RetroRunner.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				18888DCA1E7F0FA80038A3AF /* MoonRunner.xcdatamodel */,
 			);
 			currentVersion = 18888DCA1E7F0FA80038A3AF /* MoonRunner.xcdatamodel */;
-			path = MoonRunner.xcdatamodeld;
+			path = RetroRunner.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
