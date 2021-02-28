@@ -40,6 +40,7 @@ class NewRunViewController: UIViewController {
     alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel))
     alertController.addAction(UIAlertAction(title: "Save", style: .default) { _ in
       self.stopRun()
+      self.saveRun()
       self.performSegue(withIdentifier: .details, sender: nil)
     })
     alertController.addAction(UIAlertAction(title: "Discard", style: .destructive) { _ in
@@ -48,12 +49,6 @@ class NewRunViewController: UIViewController {
     })
         
     present(alertController, animated: true)
-    
-    alertController.addAction(UIAlertAction(title: "Save", style: .default) { _ in
-      self.stopRun()
-      self.saveRun() // ADD THIS LINE!
-      self.performSegue(withIdentifier: .details, sender: nil)
-    })
   }
   
   func eachSecond() {
@@ -105,7 +100,7 @@ class NewRunViewController: UIViewController {
     
     CoreDataStack.saveContext()
     
-    run = newRun
+    self.run = newRun
   }
     
   private func stopRun() {
@@ -135,7 +130,7 @@ extension NewRunViewController: SegueHandlerType {
     switch segueIdentifier(for: segue) {
     case .details:
       let destination = segue.destination as! RunDetailsViewController
-      destination.run = run
+      destination.run = self.run
     }
   }
 }

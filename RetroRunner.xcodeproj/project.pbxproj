@@ -10,7 +10,6 @@
 		18350CE81E882A860054E1C6 /* StoryboardSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18350CE71E882A860054E1C6 /* StoryboardSupport.swift */; };
 		18888DC31E7F0FA80038A3AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18888DC21E7F0FA80038A3AF /* AppDelegate.swift */; };
 		18888DC81E7F0FA80038A3AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18888DC61E7F0FA80038A3AF /* Main.storyboard */; };
-		18888DCB1E7F0FA80038A3AF /* RetroRunner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18888DC91E7F0FA80038A3AF /* RetroRunner.xcdatamodeld */; };
 		18888DCD1E7F0FA80038A3AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18888DCC1E7F0FA80038A3AF /* Assets.xcassets */; };
 		18888DD01E7F0FA80038A3AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18888DCE1E7F0FA80038A3AF /* LaunchScreen.storyboard */; };
 		18888DD91E7F1D940038A3AF /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18888DD81E7F1D940038A3AF /* CoreDataStack.swift */; };
@@ -21,6 +20,7 @@
 		3D737C2925EBFFFE00F52808 /* UnitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D737C2825EBFFFE00F52808 /* UnitExtensions.swift */; };
 		3D737C2C25EC006900F52808 /* FormatDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D737C2B25EC006900F52808 /* FormatDisplay.swift */; };
 		3D737C2F25EC00C000F52808 /* LocationRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D737C2E25EC00C000F52808 /* LocationRunner.swift */; };
+		3D737C3425EC064B00F52808 /* RetroRunnerModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D737C3225EC064B00F52808 /* RetroRunnerModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +28,6 @@
 		18888DBF1E7F0FA80038A3AF /* RetroRunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroRunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18888DC21E7F0FA80038A3AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18888DC71E7F0FA80038A3AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		18888DCA1E7F0FA80038A3AF /* MoonRunner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoonRunner.xcdatamodel; sourceTree = "<group>"; };
 		18888DCC1E7F0FA80038A3AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18888DCF1E7F0FA80038A3AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18888DD11E7F0FA80038A3AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,6 +39,7 @@
 		3D737C2825EBFFFE00F52808 /* UnitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitExtensions.swift; sourceTree = "<group>"; };
 		3D737C2B25EC006900F52808 /* FormatDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatDisplay.swift; sourceTree = "<group>"; };
 		3D737C2E25EC00C000F52808 /* LocationRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRunner.swift; sourceTree = "<group>"; };
+		3D737C3325EC064B00F52808 /* RetroRunnerModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RetroRunnerModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				18888DD81E7F1D940038A3AF /* CoreDataStack.swift */,
-				18888DC91E7F0FA80038A3AF /* RetroRunner.xcdatamodeld */,
+				3D737C3225EC064B00F52808 /* RetroRunnerModel.xcdatamodeld */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -202,9 +202,9 @@
 			files = (
 				18CF26EF1E80291E0097F88C /* NewRunViewController.swift in Sources */,
 				18888DD91E7F1D940038A3AF /* CoreDataStack.swift in Sources */,
-				18888DCB1E7F0FA80038A3AF /* RetroRunner.xcdatamodeld in Sources */,
 				18CF26F11E80292C0097F88C /* RunDetailsViewController.swift in Sources */,
 				18888DC31E7F0FA80038A3AF /* AppDelegate.swift in Sources */,
+				3D737C3425EC064B00F52808 /* RetroRunnerModel.xcdatamodeld in Sources */,
 				18CF26ED1E80290C0097F88C /* HomeViewController.swift in Sources */,
 				3D737C2C25EC006900F52808 /* FormatDisplay.swift in Sources */,
 				18350CE81E882A860054E1C6 /* StoryboardSupport.swift in Sources */,
@@ -390,13 +390,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		18888DC91E7F0FA80038A3AF /* RetroRunner.xcdatamodeld */ = {
+		3D737C3225EC064B00F52808 /* RetroRunnerModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				18888DCA1E7F0FA80038A3AF /* MoonRunner.xcdatamodel */,
+				3D737C3325EC064B00F52808 /* RetroRunnerModel.xcdatamodel */,
 			);
-			currentVersion = 18888DCA1E7F0FA80038A3AF /* MoonRunner.xcdatamodel */;
-			path = RetroRunner.xcdatamodeld;
+			currentVersion = 3D737C3325EC064B00F52808 /* RetroRunnerModel.xcdatamodel */;
+			path = RetroRunnerModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
